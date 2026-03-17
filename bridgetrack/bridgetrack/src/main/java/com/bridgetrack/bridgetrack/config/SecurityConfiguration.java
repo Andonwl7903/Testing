@@ -119,6 +119,8 @@ public class SecurityConfiguration {
 
             .authorizeHttpRequests(auth -> auth
             	    .requestMatchers(
+            	    	"/",
+            	    	"/homepage",
             	        "/bridgetrack-signin.html", // your sign-in page
             	        "/login",                   // login processing
             	        "/css/**", "/js/**", "/images/**", "/webjars/**", "/bridgetrack.css", "/bridgetrack.js", "/favicon.ico"
